@@ -29,8 +29,9 @@ variable "settings" {
 variable "bot_management" {
   description = "Cloudflare bot management configuration."
   type = object({
-    auto_update_model = optional(bool, false)
-    enable_js         = optional(bool, false)
+    auto_update_model     = optional(bool, false)
+    enable_js             = optional(bool, false)
+    is_robots_txt_managed = optional(bool, false)
   })
   default = {}
 }

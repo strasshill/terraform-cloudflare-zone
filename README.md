@@ -77,8 +77,9 @@ Type:
 
 ```hcl
 object({
-    auto_update_model = optional(bool, false)
-    enable_js         = optional(bool, false)
+    auto_update_model     = optional(bool, false)
+    enable_js             = optional(bool, false)
+    is_robots_txt_managed = optional(bool, false)
   })
 ```
 
